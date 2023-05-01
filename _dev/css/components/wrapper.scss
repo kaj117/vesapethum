@@ -1,0 +1,53 @@
+.wrapper{
+    height: 100vh;
+    header{
+        position: relative;
+        background-color: $primary;
+        h1{
+            text-align: center;
+            padding-top: $spacer * 2;
+            margin-bottom: (48 / 16) * $spacer;
+            color: $white;
+            font-size: 26px;
+            font-family: $heading-font-family;
+        }
+        .progressState{
+            transform: translateY(12px);
+            margin-bottom: $spacer * 2;
+            .progressList{
+                padding-left: 0px;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                .progressCircle{
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 100%;
+                    border: 2px solid $primary;
+                    background-color: white;
+                    &.active{
+                    }
+                }
+            }
+        }
+    }
+}
+.appWrapper{
+    background: white;
+    padding-top: 24px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    .step-container{
+        display: flex;
+        // height: 400px;
+        right: 0;
+    }
+    .step{
+        margin-right: $spacer;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+}
